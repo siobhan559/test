@@ -1,0 +1,83 @@
+{
+  "@context" : [ "http://iiif.io/api/presentation//context.json", "http://iiif.io/api/extension/navplace/context.json" ],
+  "@id" : "https://siobhan559.github.io/test/manifests/manifest3.json",
+  "@type" : "sc:Manifest",
+  "label" : "Illustrations",
+  "service" : {
+    "profile" : "http://iiif.io/api/search/0/search",
+    "@id" : "https://dev.gdmrdigital.com/search-api/1245635613/86322223/1070d076a701660cf94088023cd37993/search",
+    "@context" : "http://iiif.io/api/search/0/context.json"
+  },
+  "metadata" : [ {
+    "label" : "Author",
+    "value" : "Siobhan"
+  }, {
+    "label" : "Started",
+    "value" : [ {
+      "@value" : "London, 2022",
+      "@language" : "en"
+    } ]
+  }, {
+    "label" : "Content",
+    "value" : "Illustrations"
+  } ],
+  "description" : [ {
+    "@value" : "Selection of illustrations from the V&A's collection",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/4.0/",
+  "attribution" : "Victoria and Albert Museum",
+  "sequences" : [ {
+    "@id" : "http://e14c9494-b155-4d2d-be18-409d0730929c",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://b84abe3d-5370-4860-bd41-8349f38eada9",
+      "@type" : "sc:Canvas",
+      "label" : "Looking at paintings",
+      "viewingHint" : "paged",
+      "height" : 2500,
+      "width" : 2072,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://065436fe-6ce9-486f-a3d6-cc6b8f58d77a",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/2006-al-7715/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/2006-al-7715",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 2500,
+          "width" : 2072
+        },
+        "on" : "http://b84abe3d-5370-4860-bd41-8349f38eada9"
+      } ],
+      "otherContent" : [ {
+        "@id" : "https://siobhan559.github.io/Illustrations-manifest/annotations/4e988a1ba97009c9ff64c6da7376fc93.json",
+        "@type" : "sc:AnnotationList",
+        "label" : "First annotations"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/top",
+    "@type" : "sc:Range",
+    "label" : "Table of Content",
+    "viewingHint" : "top",
+    "ranges" : [ "http://example.org/iiif/book1/range/intro" ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/intro",
+    "@type" : "sc:Range",
+    "label" : "Painting 1",
+    "canvases" : [ "http://b84abe3d-5370-4860-bd41-8349f38eada9" ]
+  } ]
+}

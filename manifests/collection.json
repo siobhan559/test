@@ -1,0 +1,13 @@
+{
+  "id" : "https://siobhan559.github.io/test/manifests/collection.json",
+  "label" : {
+    "en" : [ "All manifests loaded in siobhan559/test project" ]
+  },
+  "type" : "Collection",
+  "@context" : "http://iiif.io/api/presentation/3/context.json",
+  "items" : [ {
+    "@type" : "sc:Manifest",
+    "@id" : "https://siobhan559.github.io/test/manifests/manifest3.json",
+    "label" : "Illustrations"
+  } ]
+}
